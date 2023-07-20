@@ -12,7 +12,7 @@ struct PolicyPage: View {
         ZStack{
             NavigationStack{
                 VStack{
-                    Text("Contact your policy maker")
+                    Text("Contact your policy maker:")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)

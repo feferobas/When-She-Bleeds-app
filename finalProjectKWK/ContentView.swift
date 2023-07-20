@@ -41,7 +41,7 @@ struct ContentView: View {
                     Spacer()
                     if timeOut == "Welcome" {
                             NavigationLink(destination: quizView()) {
-                                Text("Start :)")
+                                Text("Start")
                                     .font(.largeTitle)
                                     .fontWeight(.medium)
                             }

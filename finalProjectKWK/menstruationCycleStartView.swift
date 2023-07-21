@@ -25,8 +25,8 @@ struct menstruationCycleStartView: View {
                    HStack {
                        Spacer()
                        NavigationLink(destination: menstruationCycleEndView(start: start) ) {
-                           Text(                Image(systemName: "arrowshape.turn.up.right.fill")
-                           )
+                        Image(systemName: "arrowshape.turn.up.right.fill")
+                        
                        } .padding()
                    }
                    Spacer()

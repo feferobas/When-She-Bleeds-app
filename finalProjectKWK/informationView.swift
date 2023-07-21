@@ -19,7 +19,7 @@ struct informationView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     Text("What is Menstruation or a Period?")
-                        .font(.custom("AlegreyaSans-Black", size: 32))
+                        .font(.largeTitle)
                         .bold()
                         .foregroundColor(Color(hue: 1.0, saturation: 0.977, brightness: 0.906, opacity: 0.652))
 
@@ -33,7 +33,7 @@ struct informationView: View {
                         .padding(.horizontal)
 
                     Text("What is Menstrual Poverty?")
-                        .font(.custom("AlegreyaSans-Black", size: 32))
+                        .font(.largeTitle)
                         .bold()
                         .foregroundColor(Color(hue: 1.0, saturation: 0.977, brightness: 0.906, opacity: 0.652))
 
@@ -49,7 +49,7 @@ struct informationView: View {
                     if showAnimatedText {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("THE TABOO")
-                                .font(.custom("Sansita-Regular", size: 40))
+                                .font(.largeTitle)
                                 .bold()
                                 .foregroundColor(Color(hue: 1.0, saturation: 0.977, brightness: 0.906))
                         
@@ -59,7 +59,7 @@ struct informationView: View {
                             
         
                             Text("But Did You Know?")
-                                .font(.custom("Sansita-Regular", size: 36))
+                                .font(.largeTitle)
                                 .bold()
                                 .foregroundColor(Color(hue: 1.0, saturation: 0.977, brightness: 0.906))
                             Text("$10,000 is the estimated cost of lifetime periods products (assuming that the average menstruation is 36 years)")
@@ -67,7 +67,7 @@ struct informationView: View {
                             Text("8 out of 10 women had already used other items instead of pads, such as old rags, cloths, bread, and unhygienic products, putting their health at risk")
                                 .foregroundColor(.black)
                             Text("THE EFFECTS ON EDUCATION")
-                                .font(.custom("Sansita-Regular", size: 36))
+                                .font(.largeTitle)
                                 .bold()
                                 .foregroundColor(Color(hue: 1.0, saturation: 0.977, brightness: 0.906))
                             Text("3 months of school missed per year")

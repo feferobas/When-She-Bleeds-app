@@ -15,7 +15,7 @@ struct menstruationCycleStartPortView: View {
         NavigationStack {
             
             VStack {
-                Text("O seu ciclo menstrual")
+                Text("O SEU CICLO MENSTRUAL")
                 MultiDatePicker("Select the date your last mesntruation started:", selection: $datesStart)
                 let start = summary
               //  self.start = summary
@@ -26,8 +26,8 @@ struct menstruationCycleStartPortView: View {
                 HStack {
                     Spacer()
                     NavigationLink(destination: menstruationCycleEndPortView(start: start) ) {
-                        Text(                Image(systemName: "arrowshape.turn.up.right.fill")
-)
+                          Image(systemName: "arrowshape.turn.up.right.fill")
+                        .foregroundColor(Color.red)
                     } .padding()
                 }
                 Spacer()

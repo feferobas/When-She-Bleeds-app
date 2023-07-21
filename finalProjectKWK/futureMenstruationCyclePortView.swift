@@ -30,33 +30,38 @@ struct futureMenstruationCyclePortView: View {
     }
    
     var body: some View {
-            VStack {
+        NavigationStack{
+        VStack {
+            Spacer()
+            HStack {
                 Spacer()
-                HStack {
-                    Spacer()
-                    Text("A sua última menstruação começou:")
-                    Spacer()
-                    Text(start)
-                    Spacer()
-                } .padding()
+                Text("A sua última menstruação começou:")
                 Spacer()
-                HStack {
-                    Spacer()
-                    Text( "A sua última menstruação terminou: ")
-                    Spacer()
-                    Text(end)
-                    Spacer()
-                } .padding()
-                     Spacer()
-                HStack {
-                    Spacer()
-                    Text("A sua próxima menstruação começará no dia:")
-                    Spacer()
-                    Text(futureDateString)
-                    Spacer()
-                } .padding()
+                Text(start)
                 Spacer()
+            } .padding()
+            Spacer()
+            HStack {
+                Spacer()
+                Text( "A sua última menstruação terminou: ")
+                Spacer()
+                Text(end)
+                Spacer()
+            } .padding()
+            Spacer()
+            HStack {
+                Spacer()
+                Text("A sua próxima menstruação começará no dia:")
+                Spacer()
+                Text(futureDateString)
+                Spacer()
+            } .padding()
+            Spacer()
+            NavigationLink(destination: portugueseButton()) {
+                Text("Vá para a página principal")
             }
+        }
+    }
         }
        
       //  Text(datesEnd)

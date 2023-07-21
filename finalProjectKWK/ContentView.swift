@@ -21,7 +21,7 @@ struct ContentView: View {
         NavigationStack{
             ZStack(alignment: .top){
                 Rectangle()
-                    .foregroundColor(Color(hue: 0.029, saturation: 0.379, brightness: 0.856, opacity: 0.652))
+                    .foregroundColor(Color(hue: 0.029, saturation: 0.352, brightness: 0.971, opacity: 0.652))
                     .ignoresSafeArea()
                 VStack {
                     HStack {

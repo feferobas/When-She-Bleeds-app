@@ -30,36 +30,41 @@ struct futureMenstruationCycleView: View {
     }
    
     var body: some View {
+        NavigationStack {
         ZStack(alignment: .top){
-                Rectangle()
-                    .foregroundColor(Color(hue: 0.029, saturation: 0.379, brightness: 0.856, opacity: 0.652))
-                    .ignoresSafeArea()
-        VStack {
-            Spacer()
-            HStack {
+            Rectangle()
+                .foregroundColor(Color(hue: 0.029, saturation: 0.379, brightness: 0.856, opacity: 0.652))
+                .ignoresSafeArea()
+            VStack {
                 Spacer()
-                Text("Your last menstruation started:")
+                HStack {
+                    Spacer()
+                    Text("Your last menstruation started:")
+                    Spacer()
+                    Text(start)
+                    Spacer()
+                } .padding()
                 Spacer()
-                Text(start)
+                HStack {
+                    Spacer()
+                    Text( "Your last menstruation ended: ")
+                    Spacer()
+                    Text(end)
+                    Spacer()
+                } .padding()
                 Spacer()
-            } .padding()
-            Spacer()
-            HStack {
+                HStack {
+                    Spacer()
+                    Text("Your next menstruation will start on:")
+                    Spacer()
+                    Text(futureDateString)
+                    Spacer()
+                } .padding()
                 Spacer()
-                Text( "Your last menstruation ended: ")
-                Spacer()
-                Text(end)
-                Spacer()
-            } .padding()
-            Spacer()
-            HStack {
-                Spacer()
-                Text("Your next menstruation will start on:")
-                Spacer()
-                Text(futureDateString)
-                Spacer()
-            } .padding()
-            Spacer()
+                NavigationLink(destination: ContentView()) {
+                    Text("Go to the main page")
+                }
+            }
         }
     }
         }

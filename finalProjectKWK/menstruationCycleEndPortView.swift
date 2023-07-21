@@ -23,7 +23,9 @@ struct menstruationCycleEndPortView: View {
                 HStack{
                     Spacer()
                     NavigationLink(destination: futureMenstruationCyclePortView(summary: "", start: start, end: end, endDate: datesEnd)) {
-                        Text(Image(systemName: "arrowshape.turn.up.right.fill"))
+                        Image(systemName: "arrowshape.turn.up.right.fill")
+                            .foregroundColor(Color.red)
+                        
                              }
                              }
                             .padding()

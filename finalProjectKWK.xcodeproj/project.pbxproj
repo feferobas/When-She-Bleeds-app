@@ -24,6 +24,7 @@
 		001F0D452A69967E00D27E4F /* quizPortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F0D442A69967E00D27E4F /* quizPortView.swift */; };
 		001F0D472A69970F00D27E4F /* informationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F0D462A69970F00D27E4F /* informationView.swift */; };
 		001F0D492A6998EE00D27E4F /* informationPortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F0D482A6998EE00D27E4F /* informationPortView.swift */; };
+		006BC2A22A6ACDF2004F2D8C /* Information Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 006BC2A12A6ACDF2004F2D8C /* Information Property List.plist */; };
 		BD3C58602A69A6210053C8BB /* PolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3C585F2A69A6210053C8BB /* PolicyView.swift */; };
 		BD3C58622A69A67B0053C8BB /* EmailView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3C58612A69A67B0053C8BB /* EmailView3.swift */; };
 		BD3C58642A69A6910053C8BB /* EmailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3C58632A69A6910053C8BB /* EmailView2.swift */; };
@@ -51,6 +52,12 @@
 		001F0D442A69967E00D27E4F /* quizPortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizPortView.swift; sourceTree = "<group>"; };
 		001F0D462A69970F00D27E4F /* informationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationView.swift; sourceTree = "<group>"; };
 		001F0D482A6998EE00D27E4F /* informationPortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationPortView.swift; sourceTree = "<group>"; };
+		006BC2A12A6ACDF2004F2D8C /* Information Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Information Property List.plist"; sourceTree = "<group>"; };
+		006BC2A32A6ACE38004F2D8C /* AlegreyaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AlegreyaSans-Regular.ttf"; path = "../../Quiz-InfoApp-main-4-main/quizApp/AlegreyaSans-Regular.ttf"; sourceTree = "<group>"; };
+		006BC2A42A6ACE43004F2D8C /* BreeSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BreeSerif-Regular.ttf"; path = "../../Quiz-InfoApp-main-4-main/quizApp/BreeSerif-Regular.ttf"; sourceTree = "<group>"; };
+		006BC2A52A6ACE4A004F2D8C /* ChelaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ChelaOne-Regular.ttf"; path = "../../Quiz-InfoApp-main-4-main/quizApp/ChelaOne-Regular.ttf"; sourceTree = "<group>"; };
+		006BC2A62A6ACE55004F2D8C /* Sansita-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sansita-Regular.ttf"; path = "../../Quiz-InfoApp-main-4-main/quizApp/Sansita-Regular.ttf"; sourceTree = "<group>"; };
+		006BC2A72A6ACE5E004F2D8C /* AlegreyaSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AlegreyaSans-Black.ttf"; path = "../../Quiz-InfoApp-main-4-main/quizApp/AlegreyaSans-Black.ttf"; sourceTree = "<group>"; };
 		BD3C585F2A69A6210053C8BB /* PolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyView.swift; sourceTree = "<group>"; };
 		BD3C58612A69A67B0053C8BB /* EmailView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView3.swift; sourceTree = "<group>"; };
 		BD3C58632A69A6910053C8BB /* EmailView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView2.swift; sourceTree = "<group>"; };
@@ -88,6 +95,12 @@
 		00156EBA2A68C76400BCD285 /* finalProjectKWK */ = {
 			isa = PBXGroup;
 			children = (
+				006BC2A12A6ACDF2004F2D8C /* Information Property List.plist */,
+				006BC2A32A6ACE38004F2D8C /* AlegreyaSans-Regular.ttf */,
+				006BC2A42A6ACE43004F2D8C /* BreeSerif-Regular.ttf */,
+				006BC2A52A6ACE4A004F2D8C /* ChelaOne-Regular.ttf */,
+				006BC2A62A6ACE55004F2D8C /* Sansita-Regular.ttf */,
+				006BC2A72A6ACE5E004F2D8C /* AlegreyaSans-Black.ttf */,
 				001F0D3A2A69808300D27E4F /* donationPortView.swift */,
 				001F0D382A69802300D27E4F /* donationView.swift */,
 				00156EBB2A68C76400BCD285 /* finalProjectKWKApp.swift */,
@@ -183,6 +196,7 @@
 			files = (
 				00156EC42A68C76700BCD285 /* Preview Assets.xcassets in Resources */,
 				00156EC02A68C76700BCD285 /* Assets.xcassets in Resources */,
+				006BC2A22A6ACDF2004F2D8C /* Information Property List.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

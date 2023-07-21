@@ -13,14 +13,14 @@ struct quizView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(Color(hue: 0.958, saturation: 0.193, brightness: 0.986))
+                .foregroundColor(Color(hue: 0.022, saturation: 0.242, brightness: 0.97, opacity: 0.937))
                 .ignoresSafeArea()
 
             VStack {
                 Spacer()
 
-                Text("How are you feeling?")
-                    .font(.custom("fira sans condensed", size: 35))
+                Text("How are you feeling today?")
+                    .font(.custom("BreeSerif-Regular", size: 45))
                     .font(.title)
                     .foregroundColor(.black)
 
@@ -31,51 +31,34 @@ struct quizView: View {
 
                 Slider(value: $painLevel, in: 1...10, step: 1)
                     .padding(.horizontal)
-                    .accentColor(Color(#colorLiteral(red: 1, green: 0.4117647059, blue: 0.3803921569, alpha: 1))) // Pink slider color
+                    .accentColor(Color(#colorLiteral(red: 1, green: 0.4117647059, blue: 0.3803921569, alpha: 1)))
 
                 Text("Pain Level: \(Int(painLevel))")
+                    .font(.custom("BreeSerif-Regular", size: 25))
                     .font(.headline)
                     .foregroundColor(.black)
 
                 Spacer()
+                
+        
+                if (1...4).contains(Int(painLevel)) {
+                    Text("Hang in there! You'll get through this.")
+                        .font(.custom("BreeSerif-Regular", size: 20))
+                        .foregroundColor(Color(hue: 0.567, saturation: 0.492, brightness: 0.551))
+                        .padding()
+                } else if (5...8).contains(Int(painLevel)) {
+                    Text("Take it easy and rest. Things will get better.")
+                        .font(.custom("BreeSerif-Regular", size: 20))
+                        .foregroundColor(Color(hue: 0.342, saturation: 0.484, brightness: 0.442))
+                        .padding()
+                } else if (9...10).contains(Int(painLevel)) {
+                    Text("I'm so sorry you're feeling this way. Seek medical attention if the pain is exceeding and take care.")
+                        .font(.custom("BreeSerif-Regular", size: 20))
+                        .foregroundColor(Color(hue: 0.001, saturation: 0.933, brightness: 0.938))
+                        .padding()
+                }
             }
             .padding()
-
-            VStack {
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        // action for button
-                    }) {
-                        Image(systemName: "arrow.right.circle.fill")
-                            .resizable()
-                            .frame(width: 32, height: 32)
-                            .foregroundColor(.black)
-                            .padding(.trailing, 16)
-                            .padding(.top, 16)
-                            .padding(.bottom, 8)
-                    }
-                }
-                Spacer()
-            }
-
-            VStack {
-                HStack {
-                    Button(action: {
-                        // action for button
-                    }) {
-                        Image(systemName: "arrow.left.circle.fill")
-                            .resizable()
-                            .frame(width: 32, height: 32)
-                            .foregroundColor(.black)
-                            .padding(.leading, 16)
-                            .padding(.top, 16)
-                            .padding(.bottom, 8)
-                    }
-                    Spacer()
-                }
-                Spacer()
-            }
         }
         .preferredColorScheme(.dark)
     }

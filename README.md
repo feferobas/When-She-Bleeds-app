@@ -1,0 +1,1 @@
+When She Bleeds was an app developed in Swift language in July 2023 that aimed to end menstrual poverty by connecting users with NGOs & politicians to incentivize donations and action. Also, monitors users menstrual cycles.
